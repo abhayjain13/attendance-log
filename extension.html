@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Attendance Calculator</title>
+    <style>
+      html {
+        width: 280px;
+        height: 250px;
+        border-radius: 50px;
+      }
+
+      .heading {
+        font-weight: 400;
+      }
+
+      .value {
+        font-weight: 600;
+      }
+
+      .tandc {
+        font-size: 10px;
+        font-weight: 600;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Attendance Log</h1>
+    <div>
+      <span class="heading">Average Working Hours:</span>
+      <span class="value" id="avgHours"></span>
+    </div>
+    <div>
+      <span class="heading">Time to cover:</span>
+      <span class="value" id="timeLeftTillDate"></span>
+    </div>
+    <h4>Today</h4>
+    <div>
+      <span class="heading">Morning Punch:</span>
+      <span class="value" id="morningPunch"></span>
+    </div>
+    <div>
+      <span class="heading">Time left for Today:</span>
+      <span class="value" id="timeLeftForToday"></span>
+    </div>
+    <h4>Month</h4>
+    <div>
+      <span class="heading">Working Days Left:</span>
+      <span class="value" id="numberOfWorkingDaysLeft"></span>
+    </div>
+    <div>
+      <span class="heading">Working Hours Left:</span>
+      <span class="value" id="numberOfWorkingHoursLeft"></span>
+    </div>
+    <div>
+      <span class="heading">Working Days Completed:</span>
+      <span class="value" id="numberOfWorkingDaysCompleted"></span>
+    </div>
+    <h4>Exclusive (including Holidays)</h4>
+    <div>
+      <span class="heading">Total Working Days:</span>
+      <span class="value" id="numberOfWorkingDays"></span>
+    </div>
+    <div>
+      <span class="heading">Total Working Hours:</span>
+      <span class="value" id="numberOfWorkingHours"></span>
+    </div>
+    <div>
+      <br />
+      <span class="tandc">Time format is in hours:minutes (hh:mm).</span>
+    </div>
+  </body>
+  <script src="extension.js"></script>
+</html>
